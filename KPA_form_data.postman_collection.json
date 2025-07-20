@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "62001b69-2087-45eb-a2c4-6a05ba9bce45",
+		"name": "WheelFormAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31908725"
+	},
+	"item": [
+		{
+			"name": "Get Wheel Specifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/form_data/wheel-specifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"form_data",
+						"wheel-specifications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Request1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/form_data/wheel-specifications",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"form_data",
+								"wheel-specifications"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jul 2025 10:14:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1901"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"formNumber\": \"WHEEL-2025-001\",\n        \"submittedBy\": \"user_id_123\",\n        \"submittedDate\": \"2025-07-03\",\n        \"fields\": {\n            \"wheelGauge\": \"1600 (+2,-1)\",\n            \"wheelProfile\": \"29.4 Flange Thickness\",\n            \"condemningDia\": \"825 (800-900)\",\n            \"wheelDiscWidth\": \"127 (+4/-0)\",\n            \"intermediateWWP\": \"20 TO 28\",\n            \"treadDiameterNew\": \"915 (900-1000)\",\n            \"lastShopIssueSize\": \"837 (800-900)\",\n            \"variationSameAxle\": \"0.5\",\n            \"rollerBearingWidth\": \"93 (+0/-0.250)\",\n            \"variationSameBogie\": \"5\",\n            \"variationSameCoach\": \"13\",\n            \"bearingSeatDiameter\": \"130.043 TO 130.068\",\n            \"rollerBearingBoreDia\": \"130 (+0.0/-0.025)\",\n            \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.052)\",\n            \"rollerBearingOuterDia\": \"280 (+0.0/-0.035)\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"formNumber\": \"WHEEL-2025-002\",\n        \"submittedBy\": \"user_id_456\",\n        \"submittedDate\": \"2025-07-10\",\n        \"fields\": {\n            \"wheelGauge\": \"1602 (+1,-1)\",\n            \"wheelProfile\": \"29.5 Flange Thickness\",\n            \"condemningDia\": \"830 (805-890)\",\n            \"wheelDiscWidth\": \"127 (+3/-1)\",\n            \"intermediateWWP\": \"22 TO 30\",\n            \"treadDiameterNew\": \"920 (905-995)\",\n            \"lastShopIssueSize\": \"840 (810-890)\",\n            \"variationSameAxle\": \"0.4\",\n            \"rollerBearingWidth\": \"93 (+0/-0.200)\",\n            \"variationSameBogie\": \"4.8\",\n            \"variationSameCoach\": \"12\",\n            \"bearingSeatDiameter\": \"130.050 TO 130.065\",\n            \"rollerBearingBoreDia\": \"130 (+0.0/-0.020)\",\n            \"axleBoxHousingBoreDia\": \"280 (+0.032/+0.050)\",\n            \"rollerBearingOuterDia\": \"280 (+0.005/-0.030)\"\n        }\n    },\n    {\n        \"id\": 3,\n        \"formNumber\": \"WHEEL-2025-003\",\n        \"submittedBy\": \"user_id_789\",\n        \"submittedDate\": \"2025-07-15\",\n        \"fields\": {\n            \"wheelGauge\": \"1601 (+1.5,-0.5)\",\n            \"wheelProfile\": \"29.2 Flange Thickness\",\n            \"condemningDia\": \"820 (800-880)\",\n            \"wheelDiscWidth\": \"127 (+5/-0)\",\n            \"intermediateWWP\": \"19 TO 27\",\n            \"treadDiameterNew\": \"910 (895-1005)\",\n            \"lastShopIssueSize\": \"835 (805-895)\",\n            \"variationSameAxle\": \"0.6\",\n            \"rollerBearingWidth\": \"93 (+0/-0.210)\",\n            \"variationSameBogie\": \"5.2\",\n            \"variationSameCoach\": \"14\",\n            \"bearingSeatDiameter\": \"130.045 TO 130.067\",\n            \"rollerBearingBoreDia\": \"130 (+0.001/-0.024)\",\n            \"axleBoxHousingBoreDia\": \"280 (+0.031/+0.051)\",\n            \"rollerBearingOuterDia\": \"280 (+0.002/-0.034)\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Post Wheel Specifications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"formNumber\": \"WHEEL-2025-003\",\n  \"submittedBy\": \"user_id_789\",\n  \"submittedDate\": \"2025-07-15\",\n  \"fields\": {\n    \"treadDiameterNew\": \"910 (895-1005)\",\n    \"lastShopIssueSize\": \"835 (805-895)\",\n    \"condemningDia\": \"820 (800-880)\",\n    \"wheelGauge\": \"1601 (+1.5,-0.5)\",\n    \"variationSameAxle\": \"0.6\",\n    \"variationSameBogie\": \"5.2\",\n    \"variationSameCoach\": \"14\",\n    \"wheelProfile\": \"29.2 Flange Thickness\",\n    \"intermediateWWP\": \"19 TO 27\",\n    \"bearingSeatDiameter\": \"130.045 TO 130.067\",\n    \"rollerBearingOuterDia\": \"280 (+0.002/-0.034)\",\n    \"rollerBearingBoreDia\": \"130 (+0.001/-0.024)\",\n    \"rollerBearingWidth\": \"93 (+0/-0.210)\",\n    \"axleBoxHousingBoreDia\": \"280 (+0.031/+0.051)\",\n    \"wheelDiscWidth\": \"127 (+5/-0)\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/form_data/wheel-specifications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"form_data",
+						"wheel-specifications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Request1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"formNumber\": \"WHEEL-2025-004\",\n  \"submittedBy\": \"user_id_852\",\n  \"submittedDate\": \"2025-07-18\",\n  \"fields\": {\n    \"treadDiameterNew\": \"912 (900-1010)\",\n    \"lastShopIssueSize\": \"840 (810-890)\",\n    \"condemningDia\": \"825 (805-885)\",\n    \"wheelGauge\": \"1602 (+1.0,-0.7)\",\n    \"variationSameAxle\": \"0.5\",\n    \"variationSameBogie\": \"4.8\",\n    \"variationSameCoach\": \"13.5\",\n    \"wheelProfile\": \"29.0 Flange Thickness\",\n    \"intermediateWWP\": \"20 TO 28\",\n    \"bearingSeatDiameter\": \"130.050 TO 130.070\",\n    \"rollerBearingOuterDia\": \"280 (+0.003/-0.032)\",\n    \"rollerBearingBoreDia\": \"130 (+0.002/-0.023)\",\n    \"rollerBearingWidth\": \"93 (+0/-0.205)\",\n    \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.050)\",\n    \"wheelDiscWidth\": \"128 (+4/-1)\"\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/form_data/wheel-specifications",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"form_data",
+								"wheel-specifications"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jul 2025 10:15:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "640"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"formNumber\": \"WHEEL-2025-004\",\n    \"submittedBy\": \"user_id_852\",\n    \"submittedDate\": \"2025-07-18\",\n    \"fields\": {\n        \"treadDiameterNew\": \"912 (900-1010)\",\n        \"lastShopIssueSize\": \"840 (810-890)\",\n        \"condemningDia\": \"825 (805-885)\",\n        \"wheelGauge\": \"1602 (+1.0,-0.7)\",\n        \"variationSameAxle\": \"0.5\",\n        \"variationSameBogie\": \"4.8\",\n        \"variationSameCoach\": \"13.5\",\n        \"wheelProfile\": \"29.0 Flange Thickness\",\n        \"intermediateWWP\": \"20 TO 28\",\n        \"bearingSeatDiameter\": \"130.050 TO 130.070\",\n        \"rollerBearingOuterDia\": \"280 (+0.003/-0.032)\",\n        \"rollerBearingBoreDia\": \"130 (+0.002/-0.023)\",\n        \"rollerBearingWidth\": \"93 (+0/-0.205)\",\n        \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.050)\",\n        \"wheelDiscWidth\": \"128 (+4/-1)\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Bogie Checksheet",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Request1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"formNumber\": \"BOGIE-2025-001\",\n  \"inspectionBy\": \"user_id_456\",\n  \"inspectionDate\": \"2025-07-03\",\n  \"bogieDetails\": {\n    \"bogieNo\": \"BG1234\",\n    \"makerYearBuilt\": \"RDSO/2018\",\n    \"incomingDivAndDate\": \"NR / 2025-06-25\",\n    \"deficitComponents\": \"None\",\n    \"dateOfIOH\": \"2025-07-01\"\n  },\n  \"bogieChecksheet\": {\n    \"bogieFrameCondition\": \"Good\",\n    \"bolster\": \"Good\",\n    \"bolsterSuspensionBracket\": \"Cracked\",\n    \"lowerSpringSeat\": \"Good\",\n    \"axleGuide\": \"Worn\"\n  },\n  \"bmbcChecksheet\": {\n    \"cylinderBody\": \"WORN OUT\",\n    \"pistonTrunnion\": \"GOOD\",\n    \"adjustingTube\": \"DAMAGED\",\n    \"plungerSpring\": \"GOOD\"\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/forms/bogie-checksheet",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"forms",
+								"bogie-checksheet"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 20 Jul 2025 10:33:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "184"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Bogie checksheet submitted successfully.\",\n    \"data\": {\n        \"formNumber\": \"BOGIE-2025-001\",\n        \"inspectionBy\": \"user_id_456\",\n        \"inspectionDate\": \"2025-07-03\",\n        \"status\": \"Saved\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
