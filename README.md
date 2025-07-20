@@ -14,7 +14,7 @@ This project is a backend API implementation for the KPA Form Data system, devel
 ---
 
 ## Implemented APIs
-### 1. Wheel Specification List & Create
+###  1. Wheel Specification List & Create
 - **Endpoint:** `/api/form_data/wheel-specifications`
 - **Methods:**
   - `GET`: List all wheel specifications
@@ -80,6 +80,68 @@ This project is a backend API implementation for the KPA Form Data system, devel
 
 ---
 
+### 2. Bogie Checksheet List & Create
+- **Endpoint:** `/api/form_data/bogie-checksheets`
+- **Methods:**
+  - `GET`: List all bogie checksheets
+  - `POST`: Create a new bogie checksheet
+- **Request Body (POST):**
+  ```json
+  {
+    "formNumber": "string",
+    "inspectionBy": "string",
+    "inspectionDate": "YYYY-MM-DD",
+    "bogieDetails": { ... },
+    "bogieChecksheet": { ... },
+    "bmbcChecksheet": { ... },
+    "status": "Saved"
+  }
+  ```
+- **Example:**
+    ```json
+    {
+      "formNumber": "BOGIE-2025-001",
+      "inspectionBy": "user_id_456",
+      "inspectionDate": "2025-07-03",
+      "bogieDetails": {
+        "bogieNo": "BG1234",
+        "makerYearBuilt": "RDSO/2018",
+        "incomingDivAndDate": "NR / 2025-06-25",
+        "deficitComponents": "None",
+        "dateOfIOH": "2025-07-01"
+      },
+      "bogieChecksheet": {
+        "bogieFrameCondition": "Good",
+        "bolster": "Good",
+        "bolsterSuspensionBracket": "Cracked",
+        "lowerSpringSeat": "Good",
+        "axleGuide": "Worn"
+      },
+      "bmbcChecksheet": {
+        "cylinderBody": "WORN OUT",
+        "pistonTrunnion": "GOOD",
+        "adjustingTube": "DAMAGED",
+        "plungerSpring": "GOOD"
+      }
+  }
+    ```
+
+- **Response (201 Created):**
+  ```json
+  {
+    "id": 1,
+    "formNumber": "...",
+    "inspectionBy": "...",
+    "inspectionDate": "...",
+    "bogieDetails": { ... },
+    "bogieChecksheet": { ... },
+    "bmbcChecksheet": { ... },
+    "status": "Saved"
+  }
+  ```
+
+---
+
 ## Project Setup Instructions
 
 ### 1. Clone the Repository
@@ -130,14 +192,6 @@ python manage.py runserver
 
 ---
 
-## Deliverables
-- **Source Code:** Hosted on GitHub or as a zipped folder.
-- **Updated Postman Collection:** With your implemented API endpoints and working responses.
-- **README File:** This file, with setup and usage instructions.
-- **Screen Recording:** 2-5 minute video explaining project features and tech stack. Upload to Google Drive and share the link (rename file as `yourname_flutter_assignment.mp4`).
-
----
-
 ## References & Resources
 - [Hosted API Reference](https://kpa.suvidhaen.com)
 - [Frontend Code](https://github.com/s2pl/KPA-ERP-FE/)
@@ -145,25 +199,17 @@ python manage.py runserver
 
 ---
 
-## Limitations & Assumptions
-- Only the Wheel Specification API is implemented as a sample. For full assignment, implement at least one more diverse API (e.g., file upload, another form type, etc.) as per requirements.
-- Assumes PostgreSQL is installed and accessible locally.
-- No authentication is enforced in the sample code; add as needed for production.
-- Input validation is basic; extend as required for production use.
+### Authentication
+- Some endpoints may require authentication.
+- Example credentials:
+  - **Phone Number:** `7760873976`
+  - **Password:** `to_share@123`
+- If authentication is required, obtain a token via the login endpoint (document the endpoint if implemented).
 
----
-
-## Bonus (Optional)
-- Dockerize the backend for easy deployment.
-- Add more input validation and error handling.
-- Use environment-based configuration for all sensitive settings.
-- Integrate Swagger/OpenAPI for API documentation (Django REST Framework provides a browsable API by default).
-
----
-
-## Contact & Submission
-Mail the following to `contact@suvidhaen.com`:
-- Source Code: `[https://drive.com/yourname_api_assignment.zip]` (or GitHub link)
-- Postman Collection: `[https://drive.com/yourname_postman_collection.json]`
-- README: `[https://drive.com/yourname_readme.txt]`
-- Screen Recording: `<link to your screen recording>` 
+### Error Handling
+- Errors are returned in standard DRF format:
+  ```json
+  {
+    "detail": "Error message here."
+  }
+  ```
