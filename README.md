@@ -1,5 +1,7 @@
 # KPA API Development Assignment
 
+[![Stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Assignment Overview
 This project is a backend API implementation for the KPA Form Data system, developed as part of the backend assignment. The goal is to implement at least two fully functional APIs as specified in the provided Postman collection and SwaggerHub documentation, using Django REST Framework and PostgreSQL.
 
